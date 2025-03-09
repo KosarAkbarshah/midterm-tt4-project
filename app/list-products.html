@@ -5,152 +5,238 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Cards</title>
-    <style>
-        * {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div class="container" style="display: flex; justify-content:space-evenly;">
 
-        <!-- image 1 -->
-        <div class="card" style="
-        
-        
-        width: 400px;
-        
-         display: flex; 
-         flex-direction: column; 
-         border-radius: 10px;
-         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-         justify-content: center;
-         align-items: center;
-         margin: 40px;
-         background-color: aliceblue;
-         
-         ">
-            <img src="/midterm-project/midterm-project/app/assets/images/pexels-enginakyurt-4458519.jpg" style="
-            width: 350px; 
-            height: 350px;
-            display: flex;
-            justify-content: center;
-            border-radius: 20px;
-            " class="card-img-top" alt="...">
+    <div class="container" style="width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+        <!-- image 1 with bootstrap -->
+        <div class="card" style="max-width: 320px">
+            <img src="assets/images/pexels-enginakyurt-4458519.jpg" class="card-img-top" alt="Product Image">
             <div class="card-body">
-                <h5 class="card-title" style="font-size: 20px; color:rgb(54, 50, 50); margin: 20px;">
-                    Clothing</h5>
-
-                <p style="font-size: 20px; color:rgb(54, 50, 50); margin: 20px;" class="card-text">Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Corporis, explicabo!</p>
-                <span style="display: block; margin: 20px; font-size: 25px; color: rgb(54, 50, 50);">40,99$</span>
-
-                <button style="
-            width: 100px;
-            height: 50px;
-            border-radius: 10px;
-            background-color: rgb(54, 50, 50);
-            color: white;
-            margin: 20px;
-            "> <a style=" color: white; text-decoration: none;" href="#" class="btn btn-primary">Click
-                        here</a></button>
+                <h5 class="card-title">dress</h5>
+                <p class="card-text">Short product description goes here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="h5 mb-0">$99.99</span>
+                    <div>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                        <small class="text-muted">(4.5)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
+            </div>
+        </div>
+        <!-- image 2 with bootstrap -->
+        <div class="card" style="max-width: 320px">
+            <img src="assets/images/pexels-yaazhini-17307532.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">soap</h5>
+                <p class="card-text">Short product description goes here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="h5 mb-0">$9.99</span>
+                    <div>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                        <small class="text-muted">(4.5)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
+            </div>
+        </div>
+        <!-- image 3 with bootstrap -->
+        <div class="card" style="max-width: 320px">
+            <img src="assets/images/pexels-enginakyurt-4458519.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">dress</h5>
+                <p class="card-text">Short product description goes here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="h5 mb-0">$99.99</span>
+                    <div>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                        <small class="text-muted">(4.5)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
             </div>
         </div>
 
 
 
-
-
-        <!-- image 2 -->
-        <div class="card" style="
-        
-        
-    width: 400px;
-    
-     display: flex; 
-     flex-direction: column; 
-     border-radius: 10px;
-     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-     justify-content: center;
-     align-items: center;
-     margin: 40px;
-     background-color: aliceblue;
-     
-     ">
-            <img src="/midterm-project/midterm-project/app/assets/images/pexels-quang-viet-nguyen-107013384-9561297.jpg"
-                style="
-        width: 350px; 
-        height: 350px;
-        display: flex;
-        justify-content: center;
-        border-radius: 20px;
-        " class="card-img-top" alt="...">
+        <!-- image 4 with bootstrap -->
+        <div class="card" style="max-width: 320px">
+            <img src="assets/images/pexels-quang-viet-nguyen-107013384-9561297.jpg" class="card-img-top"
+                alt="Product Image">
             <div class="card-body">
-                <h5 class="card-title" style="font-size: 20px; color:rgb(54, 50, 50); margin: 20px;">
-                    Watch</h5>
-                <p style="font-size: 20px; color:rgb(54, 50, 50); margin: 20px;" class="card-text">Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Corporis, explicabo!</p>
-                <span style="display: block; margin: 20px; font-size: 25px; color: rgb(54, 50, 50);">900,99$</span>
-
-                <button style="
-        width: 100px;
-        height: 50px;
-        border-radius: 10px;
-        background-color: rgb(54, 50, 50);
-        color: white;
-        margin: 20px;
-        "> <a style=" color: white; text-decoration: none;" href="#" class="btn btn-primary">Click
-                        here</a></button>
+                <h5 class="card-title">watch</h5>
+                <p class="card-text">Short product description goes here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="h5 mb-0">$1000.99</span>
+                    <div>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                        <small class="text-muted">(4.5)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
             </div>
         </div>
 
 
-        <!-- image 3 -->
-        <div class="card" style="
-        
-        
-    width: 400px;
-    
-     display: flex; 
-     flex-direction: column; 
-     border-radius: 10px;
-     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-     justify-content: center;
-     align-items: center;
-     margin: 40px;
-     background-color: aliceblue;
-     
-     ">
-            <img src="/midterm-project/midterm-project/app/assets/images/pexels-yaazhini-17307532.jpg" style="
-        width: 350px; 
-        height: 350px;
-        display: flex;
-        justify-content: center;
-        border-radius: 20px;
-        " class="card-img-top" alt="...">
+        <!-- image 5 with bootstrap -->
+        <div class="card" style="max-width: 320px">
+            <img src="assets/images/pexels-quang-viet-nguyen-107013384-9561297.jpg" class="card-img-top"
+                alt="Product Image">
             <div class="card-body">
-                <h5 class="card-title" style="font-size: 20px; color:rgb(54, 50, 50); margin: 20px;">
-                    Soap</h5>
-                <p style="font-size: 20px; color:rgb(54, 50, 50); margin: 20px;" class="card-text">Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Corporis, explicabo!</p>
-                <span style="display: block; margin: 20px; font-size: 25px; color: rgb(54, 50, 50);">15,99$</span>
-                <button style="
-        width: 100px;
-        height: 50px;
-        border-radius: 10px;
-        background-color: rgb(54, 50, 50);
-        color: white;
-        margin: 20px;
-        "> <a style=" color: white; text-decoration: none;" href="#" class="btn btn-primary">Click
-                        here</a></button>
+                <h5 class="card-title">watch</h5>
+                <p class="card-text">Short product description goes here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="h5 mb-0">$1000.99</span>
+                    <div>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                        <small class="text-muted">(4.5)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
             </div>
         </div>
 
+        <!-- image 6 with bootstrap -->
+        <div class="card" style="max-width: 320px">
+            <img src="assets/images/pexels-enginakyurt-4458519.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">dress</h5>
+                <p class="card-text">Short product description goes here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="h5 mb-0">$99.99</span>
+                    <div>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                        <small class="text-muted">(4.5)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
+            </div>
+        </div>
 
+        <!-- image 7 with bootstrap -->
+        <div class="card" style="max-width: 320px">
+            <img src="assets/images/pexels-yaazhini-17307532.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">soap</h5>
+                <p class="card-text">Short product description goes here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="h5 mb-0">$99.99</span>
+                    <div>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                        <small class="text-muted">(4.5)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
+            </div>
+        </div>
+
+        <!-- image 8 with bootstrap -->
+        <div class="card" style="max-width: 320px">
+            <img src="assets/images/pexels-quang-viet-nguyen-107013384-9561297.jpg" class="card-img-top"
+                alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">watch</h5>
+                <p class="card-text">Short product description goes here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="h5 mb-0">$1000.99</span>
+                    <div>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                        <small class="text-muted">(4.5)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
+            </div>
+        </div>
+
+        <!-- image 9 with bootstrap -->
+        <div class="card" style="max-width: 320px">
+            <img src="assets/images/pexels-yaazhini-17307532.jpg" class="card-img-top" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">soap</h5>
+                <p class="card-text">Short product description goes here.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="h5 mb-0">$9.99</span>
+                    <div>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-half text-warning"></i>
+                        <small class="text-muted">(4.5)</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light">
+                <button class="btn btn-primary btn-sm">Add to Cart</button>
+                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
+            </div>
+        </div>
     </div>
 </body>
 
